@@ -19,6 +19,11 @@ ament_target_dependencies(patrol
   geometry_msgs
 )
 
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(TARGETS patrol
   DESTINATION lib/${PROJECT_NAME}
 )
